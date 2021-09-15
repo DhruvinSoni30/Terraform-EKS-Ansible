@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mywebsite-pod
+  labels:
+    app: mywebsite
+spec:
+  containers:
+    - name: mywebsite-container
+      image: dhruvin30/dhsoniweb

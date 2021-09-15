@@ -1,0 +1,12 @@
+---
+- name: Deploy to K8s Cluster 
+  hosts: all
+  become: true
+tasks:
+  - name: Deploy Pod
+    shell: |
+      kubectl apply -f pod.yml
+  
+  - name: Deploy Service
+    shell: | 
+      kubectl apply -f svc.yml
